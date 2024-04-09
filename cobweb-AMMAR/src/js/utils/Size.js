@@ -13,6 +13,6 @@ export default class Size extends EventEmitter {
     setSize() {
         this.width = window.innerWidth
         this.height = window.innerHeight
-        this.pixelRatio = Math.min(window.devicePixelRatio, 2) // no need to use > 2 (+ issues with low perf devices but high resolution screen)
+        this.pixelRatio = Math.min(window.devicePixelRatio, 2) 
     }
 }

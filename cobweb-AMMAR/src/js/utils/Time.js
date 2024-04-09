@@ -7,7 +7,7 @@ export default class Time extends EventEmitter {
         this.start = Date.now()
         this.current = this.start
         this.elapsed = 0
-        this.delta = 16 // time elapsed between the last two frames
+        this.delta = 16 
 
         this.update()
     }
@@ -18,7 +18,7 @@ export default class Time extends EventEmitter {
         this.current = current_
         this.elapsed = this.current - this.start
 
-        this.trigger('update') // trig event at each frame
+        this.trigger('update') 
 
         window.requestAnimationFrame(() => this.update())
     }
